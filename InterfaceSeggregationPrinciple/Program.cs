@@ -89,13 +89,28 @@ namespace InterfaceSeggregationPrinciple
             }
         }
 
+        // This class also uses the Decorator Pattern by delegating the print and scan implementations.
+        // If you already wrote a print implementation and don't want to duplicate this code on a combined class like MultiFunctionMachine, this would be a clean solution.
         public class MultiFunctionMachine : IMultiFunctionMachine
         {
             private IPrinter printer;
             private IScanner scanner;
-            
 
-            cto
+            public MultiFunctionMachine(IPrinter printer, IScanner scanner)
+            {
+                this.printer = printer ?? throw new ArgumentNullException(nameof(printer));
+                this.scanner = scanner ?? throw new ArgumentNullException(nameof(scanner));
+            }
+
+            public void Print(Document document)
+            {
+                printer.Print(document);
+            }
+
+            public void Scan(Document document)
+            {
+                scanner.Scan(document);
+            }
         }
 
         static void Main(string[] args)
