@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/**
+ * Classes should be open for extension but closed for modification
+ */
 namespace OpenClosedPrinciple
 {
     class Program

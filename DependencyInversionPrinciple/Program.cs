@@ -2,18 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
+/** 
+ * High level parts of the system should not depend on low level parts directly. 
+ * Instead they should depend on some kind of abstraction.
+ */
 namespace DependencyInversionPrinciple
 {
     internal class Program
     {
-        /** 
-         * Dependency Inversion Principle
-         * 
-         * High level parts of the system should not depend on low level parts directly. 
-         * Instead they should depend on some kind of abstraction.
-         * 
-         */
-
         public enum Relationship
         {
             Parent,

@@ -1,5 +1,8 @@
 ﻿using System;
 
+/**
+ * You should be able to substitute a base type for a subtype 
+ */
 namespace LiskovSubstitutionPrinciple
 {
     class Program

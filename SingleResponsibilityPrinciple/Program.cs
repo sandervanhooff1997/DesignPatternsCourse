@@ -4,6 +4,10 @@ using System.Diagnostics;
 using System.IO;
 using static System.Console;
 
+/**
+ * A class should only have one reason to change
+ * Relates to separation of concerns pattern: different classes handling different, independent tasks/problems. 
+ */
 namespace SingleResponsibilityPrinciple
 {
     public class Journal

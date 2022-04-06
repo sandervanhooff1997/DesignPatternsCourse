@@ -1,5 +1,8 @@
 ﻿using System;
 
+/**
+ * Keep interfaces small by splitting them up into multiple smaller interfaces.
+ */
 namespace InterfaceSeggregationPrinciple
 {
     class Program
